@@ -53,7 +53,8 @@ public class MarkdownMaker {
 		buffer.append('\n');
 	}
 
-	public String getString() {
+	@Override
+	public String toString() {
 		return buffer.toString();
 	}
 
