@@ -12,6 +12,7 @@ public class FightingAction implements DiscordAction {
 		maker.addQuote();
 		maker.addQuote("자격증 취득하고 취업하는 그날까지");
 		maker.addQuote("오늘 하루도 화이팅입니다~!");
+		maker.addQuote();
 		maker.addQuote("-by 황인빈 강사");
 		
 		return maker.toString();

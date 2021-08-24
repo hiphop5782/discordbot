@@ -11,8 +11,10 @@ import discord4j.core.object.entity.User;
 import discord4j.core.object.entity.channel.MessageChannel;
 
 public class App {
-	public static void main(String[] args) {
-		String token = "ODc5NTk2NzY5MjAwMTgxMjk4.YSSCUw.V4Ih_--CSM7TiNiDZ9Yr3XoA4fs";
+	public static void main(String[] args) throws ClassNotFoundException {
+		Class.forName("com.hacademy.edubot.util.ProverbMaker");
+		
+		String token = "ODc5NTk2NzY5MjAwMTgxMjk4.YSSCUw.Pq_2RsQoEyjt-FOy-nsQ-mqBxhA";
 		GatewayDiscordClient client = DiscordClientBuilder.create(token).build().login().block(); 
 		
 		client.on(ReadyEvent.class)
