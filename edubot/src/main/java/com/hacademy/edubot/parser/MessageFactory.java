@@ -17,8 +17,6 @@ public class MessageFactory {
 			throw new IllegalArgumentException("payload is empty");
 
 		DiscordAction action = ActionFactory.create(payloads);
-		System.out.println(action);
-		System.out.println(action.process(payloads));
 		return action.process(payloads);
 	}
 }
